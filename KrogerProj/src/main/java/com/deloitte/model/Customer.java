@@ -1,12 +1,14 @@
 package com.deloitte.model;
 
+import java.io.Serializable;
+
 import org.springframework.data.cassandra.core.mapping.Column;
 import org.springframework.data.cassandra.core.mapping.PrimaryKey;
 import org.springframework.data.cassandra.core.mapping.PrimaryKeyColumn;
 import org.springframework.data.cassandra.core.mapping.Table;
 
 @Table("customertb")
-public class Customer {
+public class Customer  implements Serializable{
 
 	//@PrimaryKeyColumn
 	@PrimaryKey

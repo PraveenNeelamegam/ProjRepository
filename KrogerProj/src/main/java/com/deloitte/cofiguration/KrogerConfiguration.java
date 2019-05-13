@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.client.RestTemplate;
 
 import com.deloitte.handler.KrogerFilter;
 
@@ -20,4 +21,6 @@ public class KrogerConfiguration {
 		filterRegistrationBean.addUrlPatterns("/secured/*");
 		return filterRegistrationBean;
 	}
+	
+	
 }
